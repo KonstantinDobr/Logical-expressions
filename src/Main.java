@@ -6,6 +6,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static void task1(){
@@ -24,5 +25,11 @@ public class Main {
         Scanner in = new Scanner(System.in);
         double x = in.nextDouble();
         System.out.println(!(-2 <= x && x <= 3 || 6 <= x && x <= 9));
+    }
+
+    public static void task4(){
+        Scanner in = new Scanner(System.in);
+        int x = in.nextInt();
+        System.out.println(100 <= x && x <= 999 && x % 5 == 0);
     }
 }
