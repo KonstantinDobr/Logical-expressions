@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Math.abs;
+
 public class Main {
     public static void main(String[] args){
         // tasks
@@ -8,6 +10,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
 
     public static void task1(){
@@ -44,5 +47,11 @@ public class Main {
         sum += (b + d == 0 ? 1 : 0);
         sum += (c + d == 0 ? 1 : 0);
         System.out.println(sum != 0);
+    }
+
+    public static void task6(){
+        Scanner in = new Scanner(System.in);
+        int a = in.nextInt(), b = in.nextInt(), c = in.nextInt();
+        System.out.println((abs(a % 2) + abs(b % 2) + abs(c % 2)) <= 1);
     }
 }
