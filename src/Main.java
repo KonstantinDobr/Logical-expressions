@@ -5,7 +5,9 @@ public class Main {
         // tasks
         task1();
         task2();
+        task3();
     }
+
     public static void task1(){
         Scanner in = new Scanner(System.in);
         double x = in.nextDouble();
@@ -16,5 +18,11 @@ public class Main {
         Scanner in = new Scanner(System.in);
         double x = in.nextDouble();
         System.out.println(-3 <= x && x <= 5 || 9 <= x && x <= 15);
+    }
+
+    public static void task3(){
+        Scanner in = new Scanner(System.in);
+        double x = in.nextDouble();
+        System.out.println(!(-2 <= x && x <= 3 || 6 <= x && x <= 9));
     }
 }
